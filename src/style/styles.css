@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+input, button {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #ff69b4;
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff85c1;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff0f5;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+}
+
+li:hover {
+    background: #ffe4e9;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label img {
+    cursor: pointer;
+    transition: transform 0.2s ease, border 0.2s ease;
+}
+
+input[type="radio"]:checked + label img {
+    border: 2px solid #ff69b4;
+    transform: scale(1.05);
+}
+
+.character-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    #app {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    input, button {
+        width: calc(100% - 30px);
+    }
+
+    .character-selection {
+        flex-direction: column;
+    }
+}
